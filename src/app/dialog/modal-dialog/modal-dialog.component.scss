@@ -1,0 +1,20 @@
+.modalHeader {
+  position: relative;
+
+  .butn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 5;
+
+    &:hover {
+      .mat-icon {
+        color: red;
+      }
+    }
+  }
+}

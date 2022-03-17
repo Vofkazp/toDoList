@@ -1,0 +1,62 @@
+.text {
+  font-size: 22px;
+  line-height: 27px;
+  margin: 0;
+}
+.text-header {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.butn {
+  display: inline-flex;
+  outline: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+
+  svg {
+    margin: auto;
+    fill: #888B87;
+    transition: all .5s ease-in-out;
+  }
+}
+
+.butn-edit:hover {
+  svg {
+    fill: #0101a4;
+  }
+}
+
+.butn-del:hover {
+  svg {
+    fill: #9d0000;
+  }
+}
+
+.butn-add {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #3d7a3d;
+  background: #3d7a3d;
+  padding: 0;
+  border-radius: 50%;
+
+  svg {
+    fill: #fff;
+  }
+
+  &:hover {
+    background: rgba(#3d7a3d, .3);
+    svg {
+      fill: #3d7a3d;
+    }
+  }
+}
+
+.card-header {
+  background-color: #a6a5a5;
+}

@@ -1,0 +1,51 @@
+<div class="addContainer">
+  <div class="modalHeader">
+    <button class="butn" mat-icon-button (click)="dialogRef.close()" aria-label="Close dialog">
+      <mat-icon>close</mat-icon>
+    </button>
+    <div class="editRowModal">
+      <div class="modalHeader clearfix">
+        <div class="modal-about">
+          <div class="font-weight-bold p-t-5 font-17">
+            <h1>{{title}}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div mat-dialog-content>
+    <form [formGroup]="form">
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label>Название</mat-label>
+            <input matInput formControlName="name" required>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label>Описание</mat-label>
+            <input matInput formControlName="description">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <button
+            class="btn btn-primary"
+            [class.disabled]="form.invalid"
+            (click)="submit()"
+          >
+            Сохранить
+          </button>
+        </div>
+        <div class="col text-center">
+          <button class="btn btn-outline-warning" (click)="dialogRef.close()">Отмена</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
